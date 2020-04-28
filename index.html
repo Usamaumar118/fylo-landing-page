@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header section">
 
     <div class="header__logo">
       <img src="images/logo.svg" alt="LOGO">
@@ -26,7 +26,7 @@
     <nav class="header__nav">
       <li><a class="header__nav__item" href="">Features</a></li>
       <li><a class="header__nav__item" href="">Team</a></li>
-      <li><a class="header__nav__item" href="">Sign In</a></li>
+      <li><a class="header__nav__item header__nav__item--last" href="">Sign In</a></li>
     </nav>
 
   </header>
@@ -35,7 +35,7 @@
 
     <div class="hero__text">
       <h1 class="section__heading hero__text__heading">
-        All your files in one secure location, accessible anywhere.
+        All your files in one secure<br /> location, accessible anywhere.
       </h1>
 
       <p class="section__para hero__text__para">
@@ -44,14 +44,11 @@
         family, and co-workers.
       </p>
 
-      <form action="#" class="hero__text__form">
-        <label class="hero__text__form__email" for="email">
-          <input type="text" name="email" id="email" placeholder="Enter your email...">
-          <p class="error-msg"></p>
-        </label>
-
-        <input class="hero__text__form__btn" type="submit" value="Get Started">
+      <form class="hero__text__form">
+          <input class="hero__text__form__email" type="text" name="email" id="email" placeholder="Enter your email...">
+          <input class="hero__text__form__btn" type="submit" value="Get Started">
       </form>
+
     </div>
 
     <div class="hero__img">
@@ -60,24 +57,27 @@
 
   </section>
 
+  <div class="bg-curve">
+    <img src="images/bg-curve-desktop.svg" alt="">
+  </div>
 
-  <section class="feature">
+  <section class="feature section">
 
     <div class="feature__text">
       <h1 class="section__heading feature__text__heading">
         Stay productive, wherever you are
       </h1>
-      <p class="section__para feature__text__para--1">
+      <p class="section__para feature__text__para">
         Never let location be an issue when accessing your files. Fylo has you 
         covered for all of your file storage needs.
       </p>
 
-      <p class="section__para feature__text__para--2">
+      <p class="section__para feature__text__para">
         Securely share files and folders with friends, family and colleagues for 
         live collaboration. No email attachments required!
       </p>
 
-      <a href="#" class="feature__text__btn">See how Fylo works</a>
+      <a href="#" class="feature__text__btn">See how Fylo works <img class="feature__text__btn__img" src="images/icon-arrow.svg" alt=""></a>
 
       <div class="testimonial">
         <img class="testimonial__img" src="images/icon-quotes.svg" alt="">
@@ -87,8 +87,8 @@
         </p>
 
         <div class="testimonial__client">
-          <div class="testimonial__client__img">
-            <img src="images/avatar-testimonial.jpg" alt="client image">
+          <div class="testimonial__client__img--container">
+            <img class="testimonial__client__img" src="images/avatar-testimonial.jpg" alt="client image">
           </div>
 
           <div class="testimonial__client__info">
@@ -107,7 +107,7 @@
 
   </section>
 
-  <section class="cta">
+  <section class="cta section">
     <div class="cta__text">
       <h1 class="cta__text__heading">
         Get early access today
@@ -132,59 +132,54 @@
   </section>
 
 
-  <footer class="footer">
-
-    <img src="images/logo.svg" alt="">
-
-    <div class="footer__contact-info">
-      <div class="footer__contact-info__div">
-        <img class="footer__contact-info__div__img" src="images/icon-phone.svg" alt="">
-        <p class="footer__contact-info__div__text">Phone: +1-543-123-4567</p>
-      </div>
-
-      <div class="footer__contact-info__div">
-        <img class="footer__contact-info__div__img" src="images/icon-phone.svg" alt="">
-        <p class="footer__contact-info__div__text">example@fylo.com</p>
-      </div>
-    </div>
-
-    <div class="footer__nav-1">
-      <li><a class="footer__nav-1__item" href="">Features</a></li>
-      <li><a class="footer__nav-1__item" href="">Team</a></li>
-      <li><a class="footer__nav-1__item" href="">Sign In</a></li>
-      <li><a class="footer__nav-1__item" href="">Sign In</a></li>
-    </div>
+  <footer class="footer section">
+  <div class="footer__logo">
+    <img  src="images/logo-white.svg" alt="">
+  </div>  
     
-    <div class="footer__nav-2">
-      <li><a class="footer__nav-2__item" href="">Features</a></li>
-      <li><a class="footer__nav-2__item" href="">Team</a></li>
-      <li><a class="footer__nav-2__item" href="">Sign In</a></li>
+<div class="footer__content">
+    <div class="footer__contact-info">
+      	<div class="footer__contact-info__div">
+      	  <img class="footer__contact-info__div__img" src="images/icon-phone.svg" alt="">
+      	  <p class="footer__contact-info__div__text">Phone: +1-543-123-4567</p>
+      	</div>
+      
+      	<div class="footer__contact-info__div footer__contact-info__div--2">
+      	  <img class="footer__contact-info__div__img" src="images/icon-email.svg" alt="">
+      	  <p class="footer__contact-info__div__text">example@fylo.com</p>
+      	</div>
+      
+          </div>
+      
+          <div class="footer__nav-1 footer-nav">
+      	<li><a class="footer__nav__item footer__nav__item--first" href="">About Us</a></li>
+      	<li><a class="footer__nav__item" href="">Jobs</a></li>
+      	<li><a class="footer__nav__item" href="">Press</a></li>
+      	<li><a class="footer__nav__item" href="">Blog</a></li>
+          </div>
+          
+          <div class="footer__nav-2 footer-nav ">
+      	<li><a class="footer__nav__item footer__nav__item--first" href="">Contact Us</a></li>
+      	<li><a class="footer__nav__item" href="">Terms</a></li>
+      	<li><a class="footer__nav__item" href="">Privacy</a></li>
+          </div>
+      
+          <div class="footer__social">
+      	<a class="footer__social__item" href=""><img src="images/icon-facebook.svg" alt=""></a>
+      	<a class="footer__social__item" href=""><img src="images/icon-twitter.svg" alt=""></a>
+      	<a class="footer__social__item" href=""><img src="images/icon-instagram.svg" alt=""></a>
+          </div>
+      </div>
     </div>
-
-    <div class="footer__social">
-      <a class="footer__social__item" href=""><img src="images/icon-facebook.svg" alt=""></a>
-      <a class="footer__social__item" href=""><img src="images/icon-twitter.svg" alt=""></a>
-      <a class="footer__social__item" href=""><img src="images/icon-instagram.svg" alt=""></a>
-    </div>
-
 
   </footer>
 
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
+<!-- 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 </html>
